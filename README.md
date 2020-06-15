@@ -9,6 +9,12 @@ You can git clone the project. Then use eclipse for J2EE to import the source co
 git clone https://github.com/jamesliu668/springboot-mybatis-mysql-demo.git
 ```
 
+### Generate MyBatis DAO Mapper
+The goal is not automatically executed by Maven. It can be executed from the command line with the command:
+```
+mvn mybatis-generator:generate
+```
+
 ### Check Maven Dependency
 ```
 mvn dependency:resolve
@@ -22,6 +28,11 @@ mvn dependency:purge-local-repository
 ### Build/Compile Project
 ```
 mvn clean install
+```
+
+If you want to build the project without testing, you can run following command:
+```
+mvn clean install -DskipTests
 ```
 
 ### Run Spring Boot Project with Build-in Tomcat
