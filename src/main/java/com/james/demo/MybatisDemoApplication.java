@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@MapperScan("com.james.demo.mybatis.mapper")
+@MapperScan("com.james.demo.dao.custom")
 @EnableAutoConfiguration
 @SpringBootApplication
 
